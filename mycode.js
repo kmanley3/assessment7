@@ -2,7 +2,7 @@
 
 const addToZero = arr => {
     for(let i = 0; i < arr.length; i++){
-        for(let j = 1; j < arr.length; j++){
+        for(let j = i + 1; j < arr.length; j++){
             if(arr[i] + arr[j] === 0){
                 return true
             }
@@ -13,7 +13,7 @@ const addToZero = arr => {
 
 console.log(addToZero([1, 4, 8, 1, 2]))
 // Time: O(n^2)
-// Space: O(n)
+// Space: O(1)
 
 //unique characters
 
@@ -30,7 +30,7 @@ const hasUniqueChars = str => {
 }
 console.log(hasUniqueChars("cheese"))
 // Time: O(n)
-// Space: O(1)
+// Space: O(n)
 
 const isPangram = str => {
     str = str.toLowerCase()
@@ -38,7 +38,7 @@ const isPangram = str => {
 }
 console.log(isPangram("The quick brown fox jumps over the lazy dog"))
 // Time: O(n)
-// Space: O(1)
+// Space: O(n)
 
 const findLongestWord = arr => {
     let biggestBoi = 0
@@ -52,4 +52,4 @@ const findLongestWord = arr => {
 console.log(findLongestWord(["bacon","poptart","waffles","pancakes","crepes"]))
 //now I'm hungry
 //Time: O(n)
-//Space: O(n)
+//Space: O(1)
