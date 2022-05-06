@@ -1,0 +1,6 @@
+Append starts out slower but scales
+better than insert over time. Because 'unshift' in 'insert'
+has to go through and reassign every index once
+a value is placed into the first spot, it is slower.
+Append is only adding one new value to the end without rearranging
+the entire array, so it doen't take as much time.
